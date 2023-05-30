@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="../aluzje w kulturze i sztuce/js/timer.js"></script>
+</head>
+<body onload="odliczanie();">
+    <div class="page">
+        <header  style="color: white;">
+            <div id="zegar" style="margin-left: 1000px;"></div> 
+            <h1>Aluzje w kulturze i sztuce <br> </h1>
+             <section class="slider__container">
+                <button
+                  class="slider__button slider__button--prev"
+                  data-button-prev
+                ></button>
+                <figure class="slide" data-slide></figure>
+                <button
+                  class="slider__button slider__button--next"
+                  data-button-next
+                ></button>
+              </section>
+            <script src="../aluzje w kulturze i sztuce/js/obrazy.js" ></script>
+            <script class="zdjecia">
+                const imageArr = [
+                    './img/andrzej-sapkowski.jpg',
+                    './img/marvel.jpg',
+                    './img/danbrown4.jpg',
+                    './img/sufjan-stevens.jpg',
+                    './img/twojvincent2.jpg',
+                ];
+                
+                const slider = new Slider(imageArr);
+                slider.initializeSlider();
+            </script>
+        </header>
+        
+        <main class="main">
+            
+            <p  class="main1" style="font-size: 30px ;"> <b>Wielu artystów swoją sztuką próbuję zwrócić uwagę odbiorcy na różne wątki       historyczne,   aspekty kultury, czy na inne dzieła
+            swoje lub innych twórców. Pragnę przedstawić kilka z moich ulubionych książek, utworów muzycznych oraz filmów, w których 
+            można znaleźć wiele ciekawych odniesień oraz nawiązań, które mają potencjał zainteresowac duże grono nie tylko pasjonatów sztuki.</b></p>
+    </div>  
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Strona Główna</a>
+            </li>
+            <li>
+                <a href="pages/andrzejsapkowski.html">Andrzej Sapkowski</a>
+            </li>
+            <li>
+                <a href="pages/danbrown.html">Dan Brown</a>
+            </li>
+            <li>
+                <a href="pages/marvelcinematicuniverse.html">Marvel Cinematic Universe </a>
+            </li>
+            <li>
+                <a href="pages/sufjanstevens.html">Sufjan Stevens</a>
+            </li>
+            <li>
+                <a href="pages/twojvincent.html">Twój Vincent</a>
+            </li>
+        </ul>
+    </nav>  
+</body>
+</html>
